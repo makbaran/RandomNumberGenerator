@@ -13,8 +13,6 @@ int main(void) {
 
     // printf("Random Number Generator starts at %ld\n", seconds);
     
-    
-    printf("Hello World\n");
     if (seconds == -1) {
         printf("The time()Function");
     }
