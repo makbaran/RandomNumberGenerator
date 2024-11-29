@@ -2,22 +2,31 @@
 #include <stdlib.h>
 #include <time.h>
 
+struct myStruct {
+    int myNum;
+    char myLetter;
+};
+
+struct employee {
+    int employeeID;
+    char* employeeName;
+};
+
 int main(void) {
     printf("Hello, World!\n");
     printf("Random Number Generator\n");
 
 
-    scanf("Please enter a number: \n");
-    scanf("Please enter the end range: \n");
+    
 
-
+    
     int numberRange;
     time_t seconds;
     seconds = time(NULL);
-    printf("Random Number Generator starts at %ld\n", seconds);
+    // printf("Random Number Generator starts at %ld\n", seconds);
+    
+    printf("Hello World\n");
 
-
-
+    printf("yo");
     return 0;
-
 }
