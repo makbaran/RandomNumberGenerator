@@ -3,18 +3,22 @@
 #include <time.h>
 
 int main(void) {
-    printf("Random Number Generator\n");
+    printf("--- Random Number Generator ---\n");
 
-    int numberRange;
+    int firstVal;
+    int secondVal;
+
     time_t seconds;
     seconds = time(NULL);
-    printf("%d\n",seconds);
     
+    printf("Input min value: ");
 
-    // printf("Random Number Generator starts at %ld\n", seconds);
+    scanf("%d", firstVal);
+
+    printf("Input max value: ");
+
+    scanf("%d", secondVal);
+
     
-    if (seconds == -1) {
-        printf("The time()Function");
-    }
     return 0;
 }
