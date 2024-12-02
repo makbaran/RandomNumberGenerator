@@ -2,11 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 int linearCongruentialGenerator(int seed, int min, int max) {
     int randValue;
     int current = seed;
-    
 
     int a = 1103515245;
     int c = 12345;
@@ -17,7 +15,6 @@ int linearCongruentialGenerator(int seed, int min, int max) {
     randValue = (current % (max - min + 1)) + min;
 
     return randValue;
-
 }
 
 int main(void) {
@@ -25,7 +22,6 @@ int main(void) {
 
     time_t seconds;
     seconds = time(NULL);
-
 
     int min, max;
     printf("Enter min number: ");
@@ -42,11 +38,8 @@ int main(void) {
     }
 
     int finalVal = linearCongruentialGenerator(seconds, min, max);
-    
+
     printf("%d\n", finalVal);
-    
-
-
 
     return 0;
 }
