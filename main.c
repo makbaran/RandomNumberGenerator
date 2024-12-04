@@ -39,7 +39,7 @@ int main(void) {
 
     int finalVal = linearCongruentialGenerator(seconds, min, max);
 
-    printf("%d\n", finalVal);
+    printf("The random number is: %d\n", finalVal);
 
     return 0;
 }
