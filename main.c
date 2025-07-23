@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-int linearCongruentialGenerator(int seed, int min, int max) {
+// This is a test for the repo
+int linearCongruentialGenerator(int seed, int min, int max)
+{
     int randValue;
     int current = seed;
 
@@ -17,7 +19,8 @@ int linearCongruentialGenerator(int seed, int min, int max) {
     return randValue;
 }
 
-int main(void) {
+int main(void)
+{
     printf("--- Random Number Generator ---\n");
 
     time_t seconds;
@@ -32,7 +35,8 @@ int main(void) {
 
     scanf("%d", &max);
 
-    if ((min < 0) || (max < 0) || (min >= max)) {
+    if ((min < 0) || (max < 0) || (min >= max))
+    {
         printf("Invalid input. Ensure min and max are non-negative and min is less than max.\n");
         return 1;
     }
